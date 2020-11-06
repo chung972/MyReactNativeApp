@@ -24,6 +24,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import codePush from 'react-native-code-push';
+
 const App: () => React$Node = () => {
   return (
     <>
@@ -111,4 +113,10 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+const codePushOptions  = {
+  checkFrequency: codePush.CheckFrequency.ON_APP_START
+  // line above checks how often codePush checks for latest update
+  // can use .ON_APP_RESUME (which is more aggressive than .ON_APP_START)
+};
+
+export default codePush(codePushOptions)(App);
