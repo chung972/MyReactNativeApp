@@ -6,6 +6,8 @@
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>MyReactNativeApp</string>
+	<key>CodePushDeploymentKey</key>
+	<string>EqGM6U8aOFQeK9AfIb-W54zUuuGXQ3yb5Gps5</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
